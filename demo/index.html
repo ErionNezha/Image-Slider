@@ -1,0 +1,88 @@
+<!-- Created by Erion Nezha — © 2026 All rights reserved -->
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider — Erion Nezha</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body{min-height:100vh;display:flex;flex-direction:column;align-items:center;font-family:system-ui,'Segoe UI',sans-serif}
+  .page-title{text-align:center;color:#fff;margin:26px 0 6px}
+  .page-title h1{font-size:1.6rem;margin-bottom:6px}
+  .page-title p{opacity:.85;font-size:.95rem}
+  .credit{color:#fff;opacity:.75;font-size:.82rem;margin:22px 0 30px;text-align:center}
+  .credit strong{opacity:1}
+  /* përshtatje: slideri origjinal ishte 609x420 fiks — e bëjmë responsive */
+  .slides{max-width:92vw}
+  .slide,.slides{width:min(609px,92vw)}
+  .slide{height:auto;aspect-ratio:609/420}
+  .nav label{line-height:1;font-size:70pt;padding-top:32%}
+</style>
+</head>
+<body>
+<div class="page-title">
+  <h1>🖼️ Image Slider</h1>
+  <p>Slider profesional me CSS të pastër — pa JavaScript. Kliko shigjetat ose pikat për të ndërruar foton.</p>
+</div>
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img1.jpg" alt="Foto 1" /></div>
+        <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img2.jpg" alt="Foto 2" /></div>
+        <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img3.jpg" alt="Foto 3" /></div>
+        <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-4" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img4.jpg" alt="Foto 4" /></div>
+        <div class="nav">
+            <label for="img-3" class="prev">&#x2039;</label>
+            <label for="img-5" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img5.jpg" alt="Foto 5" /></div>
+        <div class="nav">
+            <label for="img-4" class="prev">&#x2039;</label>
+            <label for="img-6" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide"><img src="images/img6.jpg" alt="Foto 6" /></div>
+        <div class="nav">
+            <label for="img-5" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+        </div>
+    </li>
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul>
+<div class="credit">Krijuar nga <strong>Erion Nezha</strong> — © 2026</div>
+</body>
+</html>
